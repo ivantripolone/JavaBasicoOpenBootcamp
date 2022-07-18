@@ -1,17 +1,12 @@
 public class Main {
-    public static void main (String [ ] args) {
-        int i = 2;
-        double d= 2.32;
-        long l= -2L;
-        boolean b= true;
-        String s= "Hola";
+        public static void main(String[] args) {
 
-        System.out.println(i);
-        System.out.println(d);
-        System.out.println(l);
-        System.out.println(b);
-        System.out.println(s);
+            String[] nombres = {"Pepe", "Juan", "Anthony"};
+            String nombresConcatenados = "";
+            for (int i = 0; i < nombres.length; i++) {
+                nombresConcatenados += nombres[i] + " ";
+            }
+            System.out.println(nombresConcatenados);
 
-
-    }
+        }
 }
